@@ -229,3 +229,45 @@ print(f'los numeros ingresados fueron {numeros}')
 
 
 vector_simetrico(numeros)
+
+
+# ejercicio 7
+# parte a
+
+def conjuntos_union(A, B):
+    C = list(set(A + B))
+    print(f'la union de los dos vectores es: {C}')
+
+
+# parte b
+
+
+def conjuntos_interseccion(A, B):
+    C = []
+    for i in A:
+        for valor in B:
+            if i == valor:
+                C.append(i)
+    print(f'la intersecion de los dos vectores es: {C}')
+
+
+i = 1
+A = []
+while True:
+    num = int(input(f'ingrese el numero {i} o ingrese 0 para finalizar: '))
+    if num == 0: break
+    A.append(num)
+    i += 1
+print(f'los numeros ingresados fueron {A}')
+
+i = 1
+B = []
+while True:
+    num = int(input(f'ingrese el numero {i} o ingrese 0 para finalizar: '))
+    if num == 0: break
+    B.append(num)
+    i += 1
+print(f'los numeros ingresados fueron {B}')
+
+conjuntos_union(A, B)
+conjuntos_interseccion(A, B)
