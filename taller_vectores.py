@@ -23,6 +23,14 @@ def productoria(numeros):
         producto = producto * valor
     print(f'el valor de la productoria es: {producto}')
 
+# parte c
+
+
+def num_mayor(numeros):
+    numeros.sort()
+    mayor = numeros[(len(numeros) - 1):]
+    print(f'el numero mayor es: {mayor}')
+
 
 i = 1
 numeros = []
@@ -36,3 +44,4 @@ print(f'los numeros ingresados fueron {numeros}')
 
 sumatoria(numeros)
 productoria(numeros)
+num_mayor(numeros)
