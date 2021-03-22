@@ -67,6 +67,17 @@ def cant_pares(numeros):
     print(f'la cantidad de numeros pares ingresados fueron: {pares}')
 
 
+# parte b
+
+
+def cant_impares(numeros):
+    impares = 0
+    for numero in numeros:
+        if numero % 2 == 1:
+            impares += 1
+    print(f'la cantidad de numeros impares ingresados fueron: {impares}')
+
+
 i = 1
 numeros = []
 while True:
@@ -77,3 +88,4 @@ while True:
 print(f'los numeros ingresados fueron {numeros}')
 
 cant_pares(numeros)
+cant_impares(numeros)
