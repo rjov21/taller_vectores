@@ -178,3 +178,27 @@ print(f'los numeros ingresados fueron {numeros}')
 
 
 num_repetido(numeros)
+
+# ejercicio 5
+
+
+def vector_2_partes(numeros):
+    if len(numeros) % 2 != 0:
+        print('la longitud del vector no es par,ingrese una longitud par')
+    mitad = int(len(numeros) / 2)
+    v1 = numeros[:mitad]
+    v2 = numeros[mitad:]
+    productoria(v1)
+    sumatoria(v2)
+
+
+i = 1
+numeros = []
+while True:
+    num = int(input(f'ingrese el numero {i} o ingrese 0 para finalizar: '))
+    if num == 0: break
+    numeros.append(num)
+    i += 1
+print(f'los numeros ingresados fueron {numeros}')
+
+vector_2_partes(numeros)
