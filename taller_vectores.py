@@ -202,3 +202,30 @@ while True:
 print(f'los numeros ingresados fueron {numeros}')
 
 vector_2_partes(numeros)
+
+
+# ejercicio 6
+
+
+def vector_simetrico(numeros):
+    mitad = int(len(numeros) / 2)
+    v = numeros[:mitad]
+    v2 = numeros[mitad:]
+    v2.reverse()
+    if v == v2:
+        print('el vector es simetrico')
+    else:
+        print('el vector no es simetrico')
+
+
+i = 1
+numeros = []
+while True:
+    num = int(input(f'ingrese el numero {i} o ingrese 0 para finalizar: '))
+    if num == 0: break
+    numeros.append(num)
+    i += 1
+print(f'los numeros ingresados fueron {numeros}')
+
+
+vector_simetrico(numeros)
