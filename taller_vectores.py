@@ -149,3 +149,32 @@ print(f'los numeros ingresados fueron {v1}')
 
 operaciones_vectores_suma(v, v1)
 operaciones_vectores_resta(v, v1)
+
+# ejercicio 4
+
+
+def num_repetido(numeros):
+    cont = 0
+    aux = 0
+    for i in numeros:
+        cont = 0
+        for valor in numeros:
+            if i == valor:
+                cont += 1
+        if cont > aux:
+            aux = cont
+            num = i
+    print(f'el numero que mas se repite es {num} y se repite {aux} veces')
+
+
+i = 1
+numeros = []
+while True:
+    num = int(input(f'ingrese el numero {i} o ingrese 0 para finalizar: '))
+    if num == 0: break
+    numeros.append(num)
+    i += 1
+print(f'los numeros ingresados fueron {numeros}')
+
+
+num_repetido(numeros)
