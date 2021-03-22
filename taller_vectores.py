@@ -14,6 +14,15 @@ def sumatoria(numeros):
         suma = suma + valor
     print(f'el valor de la sumatoria es: {suma}')
 
+# parte b
+
+
+def productoria(numeros):
+    producto = 1
+    for valor in numeros:
+        producto = producto * valor
+    print(f'el valor de la productoria es: {producto}')
+
 
 i = 1
 numeros = []
@@ -26,3 +35,4 @@ print(f'los numeros ingresados fueron {numeros}')
 
 
 sumatoria(numeros)
+productoria(numeros)
