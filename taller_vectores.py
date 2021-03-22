@@ -106,3 +106,46 @@ print(f'los numeros ingresados fueron {numeros}')
 cant_pares(numeros)
 cant_impares(numeros)
 cant_primos(numeros)
+
+
+# ejercicio 3
+# parte a
+
+
+def operaciones_vectores_suma(v, v1):
+    vresultado = []
+    for i in range(len(v)):
+        x = v[i] + v1[i]
+        vresultado.append(x)
+    print(f'el vector resultante de la suma es: {vresultado}')
+
+
+# parte b
+def operaciones_vectores_resta(v, v1):
+    vresultado = []
+    for i in range(len(v)):
+        x = v[i] - v1[i]
+        vresultado.append(x)
+    print(f'el vector resultante de la suma es: {vresultado}')
+
+
+i = 1
+v = []
+while True:
+    num = int(input(f'ingrese el numero {i} o ingrese 0 para finalizar: '))
+    if num == 0: break
+    v.append(num)
+    i += 1
+print(f'los numeros ingresados fueron {v}')
+
+i = 1
+v1 = []
+while True:
+    num = int(input(f'ingrese el numero {i} o ingrese 0 para finalizar: '))
+    if num == 0: break
+    v1.append(num)
+    i += 1
+print(f'los numeros ingresados fueron {v1}')
+
+operaciones_vectores_suma(v, v1)
+operaciones_vectores_resta(v, v1)
