@@ -54,3 +54,26 @@ sumatoria(numeros)
 productoria(numeros)
 num_mayor(numeros)
 num_menor(numeros)
+
+# ejercicio 2
+# parte a
+
+
+def cant_pares(numeros):
+    pares = 0
+    for numero in numeros:
+        if numero % 2 == 0:
+            pares += 1
+    print(f'la cantidad de numeros pares ingresados fueron: {pares}')
+
+
+i = 1
+numeros = []
+while True:
+    num = int(input(f'ingrese el numero {i} o ingrese 0 para finalizar: '))
+    if num == 0: break
+    numeros.append(num)
+    i += 1
+print(f'los numeros ingresados fueron {numeros}')
+
+cant_pares(numeros)
