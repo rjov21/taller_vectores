@@ -31,6 +31,14 @@ def num_mayor(numeros):
     mayor = numeros[(len(numeros) - 1):]
     print(f'el numero mayor es: {mayor}')
 
+# parte d
+
+
+def num_menor(numeros):
+    numeros.sort()
+    menor = numeros[:1]
+    print(f'el numero menor es: {menor}')
+
 
 i = 1
 numeros = []
@@ -45,3 +53,4 @@ print(f'los numeros ingresados fueron {numeros}')
 sumatoria(numeros)
 productoria(numeros)
 num_mayor(numeros)
+num_menor(numeros)
