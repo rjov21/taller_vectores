@@ -78,6 +78,22 @@ def cant_impares(numeros):
     print(f'la cantidad de numeros impares ingresados fueron: {impares}')
 
 
+# parte c
+
+
+def cant_primos(numeros):
+    cont = 0
+    primos = 0
+    for valor in numeros:
+        for i in range(valor):
+            i += 1
+            if valor % i == 0:
+                cont += 1
+            if cont == 2:
+                primos += 1
+    print(f'la cantidad de numeros primos es: {primos}')
+
+
 i = 1
 numeros = []
 while True:
@@ -89,3 +105,4 @@ print(f'los numeros ingresados fueron {numeros}')
 
 cant_pares(numeros)
 cant_impares(numeros)
+cant_primos(numeros)
