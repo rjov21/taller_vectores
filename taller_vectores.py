@@ -264,6 +264,19 @@ def diferencia_A(A, B):
     print(f'la diferencia es: {C}')
 
 
+# parte d
+
+
+def diferencia_B(A, B):
+    C = []
+    C = B
+    for i in B:
+        for valor in A:
+            if i == valor:
+                C.remove(i)
+    print(f'la diferencia es: {C}')
+
+
 i = 1
 A = []
 while True:
@@ -285,3 +298,4 @@ print(f'los numeros ingresados fueron {B}')
 conjuntos_union(A, B)
 conjuntos_interseccion(A, B)
 diferencia_A(A, B)
+diferencia_B(A, B)
