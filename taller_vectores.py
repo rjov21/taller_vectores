@@ -251,6 +251,19 @@ def conjuntos_interseccion(A, B):
     print(f'la intersecion de los dos vectores es: {C}')
 
 
+# parte c
+
+
+def diferencia_A(A, B):
+    C = []
+    C = A
+    for i in A:
+        for valor in B:
+            if i == valor:
+                C.remove(i)
+    print(f'la diferencia es: {C}')
+
+
 i = 1
 A = []
 while True:
@@ -271,3 +284,4 @@ print(f'los numeros ingresados fueron {B}')
 
 conjuntos_union(A, B)
 conjuntos_interseccion(A, B)
+diferencia_A(A, B)
